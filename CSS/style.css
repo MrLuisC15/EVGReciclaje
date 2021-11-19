@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Righteous', cursive;
+    background-image: url(../img/fondoN1.jpg);
+
+}
+h1{
+    font-size: 1.8em;
+    margin-top: 10px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+}
+#maincontainer{
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 80%;
+    text-align: center;
+}
+#puntosniveles{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+div{
+    float: left;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+#pPuntos, #pNivel {
+    font-size: large;
+
+}
+
+#divPrincipal {
+    border: 15px solid rgb(60, 189, 0);
+    border-radius: 20px;
+    background-color: rgb(215, 255, 205);
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+.items{
+    height: 50px;
+    margin: 15px;
+    clear: left;
+    position: absolute;
+    transition: 1s;
+}
+#papeleras{
+    border: 15px solid rgb(60, 189, 0);
+    border-radius: 20px;
+    background-color: rgb(215, 255, 205);
+    clear: left;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}   
+#papeleras div{
+    width: fit-content;
+}
+
+#papeleras img {
+    height: 100px;
+    background-color: white;
+    border-radius: 10px;
+}
+#papeleras img, #maincontainer, h1{
+    box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.49);
+    -webkit-box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.49);
+    -moz-box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.49);
+}
+@media (max-width: 800px){
+    #maincontainer{
+        width: 95%;
+    }
+    #papeleras img {
+        height: 60px;
+    }
+    .items{
+        height: 30px;
+    }
+    
+}
+.marcado{
+    background-color: #1086af;
+    border: 2px solid #1086af;
+    border-radius: 5px;
+}
